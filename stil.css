@@ -1,0 +1,62 @@
+@media  screen and (min-widht:600px) {
+    #body{display:inline;}
+}
+
+
+.nav-item{
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+
+}
+#navitem{
+    color: wheat;
+}
+#home{
+    height: 600px;
+    background-color: #264865;
+}
+#Brief{
+    height: 600px;
+    background-color: #256d85;
+}
+
+#Team{
+    height: 600px;
+    background-color: #f5e8c7;
+    width: 100%;
+}
+.card{
+    width: 15rem;
+    height: 27rem;
+}
+#FAQ{
+    top: 75px;
+    height: 600px;
+    background-color: white;
+}
+.card{
+    float: left;
+    margin-left: 100px;
+}
+h1{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    
+}
+.p
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    color: wheat;
+}
+.div-carousel{
+    display: flex;
+    justify-content: center;
+}
+#carouselExampleInterval{
+    width: 350px;
+    height: 350px;
+}
+

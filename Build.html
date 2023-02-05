@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta https-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="stil.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="bootstrap.js"></script>
+  </head>
+  <body >
+
+      <!--                Nav Bar                     -->
+    <nav class="navbar navbar-expand-lg  bg-opacity-5" style="background-color: #002656;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="Logo/logo.png" alt="logo" width="50px" height="50px">
+        </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link active" id="navitem" aria-current="page" href="index.html">HOME</a>
+            </li>
+            <!--   Build -->
+            <li class="nav-item">
+              <a class="nav-link active" id="navitem" aria-current="page" href="Build.html">BUILD</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav sm-icons" >
+            <li><a  class="nav-link" target="_blank" href="https://discord.com/"><img  src="https://img.icons8.com/3d-fluency/94/null/discord-logo.png" alt="discord" style="height: 25px; width: 25px;"></a></li>
+            <li><a  class="nav-link" target="_blank" href="http://www.twitter.com"><img src="https://img.icons8.com/stickers/100/null/twitter.png" alt="twitter" style="height: 25px; width: 25px;"></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--                    Build                  -->
+   <div > 
+      <h1>BUILD</h1>
+
+    <div class="builder-div">
+      <div class="specDiv">
+        <img src="nft/Body/body1.png" id="bodyimg" class="body" >
+        
+        <img src="nft/Eye/eye1.png" id="eyeimg" class="eye" >
+        
+        <img src="nft/Head/head1.png" id="headimg" class="head" >
+
+        <img src="nft/Hand/hand1.png" id="handimg" class="hand" >
+        
+        <img src="nft/Mainbody/mainbody1.png" id="mainbodyimg" class="mainbody" >
+        
+        <img src="nft/Mouth/mouth1.png" id="mouthimg" class="mouth" >
+      </div>
+        <div class="select-div">
+            <!-- Mouth -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  
+          <select class="mouth-select" name="inputType" form="carform" class="form-control" id="inputType" name="inputType" title="inputType" required >
+            <option disabled selected value>Select Mouth</option>
+            <option>None</option>
+            <option value="mouth1">Mouth1</option>
+            <option value="mouth2">Mouth2</option>
+          </select>
+          
+            <!-- Main Body -->
+          <select class="mainbody-select" name="bodyType" form="carform" class="form-control" id="bodyType" name="bodyType" title="bodyType" required >
+            <option disabled selected value>Select MainBody</option> 
+            <option>None</option>
+            <option value="mainbody1">Mainbody1</option>
+            <option value="mainbody2">Mainbody2</option>
+          </select>
+          
+            <!-- Head -->
+          <select class="head-select" name="bodyType" form="carform" class="form-control" id="bodyType" name="bodyType" title="bodyType" required >
+            <option disabled selected value>Select Head</option> 
+            <option>None</option>
+            <option value="head1">Head1</option>
+            <option value="head2">Head2</option>
+          </select>
+      
+            <!-- Eye  -->
+          <select class="eye-select" name="bodyType" form="carform" class="form-control" id="bodyType" name="bodyType" title="bodyType" required >
+            <option disabled selected value>Select Eye</option> 
+            <option>None</option>
+            <option value="eye1">Eye1</option>
+            <option value="eye2">Eye2</option>
+          </select>
+      
+            <!-- Body  -->
+          <select class="body-select" name="bodyType" form="carform" class="form-control" id="bodyType" name="bodyType" title="bodyType" required >
+            <option disabled selected value>Select Body</option> 
+            <option>None</option>
+            <option value="body1">Body1</option>
+            <option value="body2">Body2</option>
+          </select>
+
+            <!-- Hand  -->
+          <select class="hand-select" name="bodyType" form="carform" class="form-control" id="bodyType" name="bodyType" title="bodyType" required >
+            <option disabled selected value>Select Hand</option> 
+            <option>None</option>
+            <option value="hand1">Hand1</option>
+            <option value="hand2">Hand2</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script>
+   // ---------- BODY ----------
+    const selectElement1 = document.querySelector('.body-select');
+
+    selectElement1.addEventListener('change', (event) => {
+  
+      if (event.target.value === "body2"){
+        document.getElementById("bodyimg").src ="nft/Body/body2.png";
+      } else if (event.target.value === "body1"){
+        document.getElementById("bodyimg").src ="nft/Body/body1.png";
+      } else {
+        document.getElementById("bodyimg").src ="nft/none.png";
+      }
+    });
+
+   // ---------- EYE ----------
+    const selectElement2 = document.querySelector('.eye-select');
+
+    selectElement2.addEventListener('change', (event) => {
+
+      if (event.target.value === "eye2"){
+        document.getElementById("eyeimg").src ="nft/Eye/eye2.png";
+      } else if (event.target.value === "eye1"){
+        document.getElementById("eyeimg").src ="nft/Eye/eye1.png";
+      } else {
+        document.getElementById("eyeimg").src ="nft/none.png";
+      }
+    });
+
+    // ---------- HEAD ----------
+    const selectElement3 = document.querySelector('.head-select');
+
+    selectElement3.addEventListener('change', (event) => {
+
+      if (event.target.value === "head2"){
+        document.getElementById("headimg").src ="nft/Head/head2.png";
+      } else if (event.target.value === "head1"){
+        document.getElementById("headimg").src ="nft/Head/head1.png";
+      } else {
+        document.getElementById("headimg").src ="nft/none.png";
+      }
+    });
+
+   // ---------- HAND ----------
+    const selectElement4 = document.querySelector('.hand-select');
+
+    selectElement4.addEventListener('change', (event) => {
+
+      if (event.target.value === "hand2"){
+        document.getElementById("handimg").src ="nft/Hand/hand2.png";
+      } else if (event.target.value === "hand1"){
+        document.getElementById("handimg").src ="nft/Hand/hand1.png";
+      } else {
+        document.getElementById("handimg").src ="nft/none.png";
+      }
+    });
+
+    // ---------- MAINBODY ----------
+    const selectElement5 = document.querySelector('.mainbody-select');
+
+    selectElement5.addEventListener('change', (event) => {
+
+      if (event.target.value === "mainbody2"){
+        document.getElementById("mainbodyimg").src ="nft/Mainbody/mainbody2.png";
+      } else if (event.target.value === "mainbody1"){
+        document.getElementById("mainbodyimg").src ="nft/Mainbody/mainbody1.png";
+      } else {
+        document.getElementById("mainbodyimg").src ="nft/none.png";
+      }
+    });
+
+    // ---------- MOUTH ----------
+    const selectElement6 = document.querySelector('.mouth-select');
+
+    selectElement6.addEventListener('change', (event) => {
+
+      if (event.target.value === "mouth2"){
+        document.getElementById("mouthimg").src ="nft/Mouth/mouth2.png";
+      } else if (event.target.value === "mouth1"){
+        document.getElementById("mouthimg").src ="nft/Mouth/mouth1.png";
+      } else {
+        document.getElementById("mouthimg").src ="nft/none.png";
+      }
+    });
+
+  </script>
+  <style>
+    .nav-item{
+      font-weight: bold;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 25px;
+    }
+    @media  screen and (min-widht:600px) {
+      #body{display:inline;}
+    }
+    #navitem{
+      color: wheat;
+    }
+    .specDiv{
+      position: relative;
+      width: 500px;
+      height: 500px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+    }
+    .builder-div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .select-div{
+      display: flex;
+      flex-direction: column;
+    }
+    select{
+      margin:1px;
+    }
+    .body{
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+    .eye{
+      position: absolute;
+      z-index: 2;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+    .head{
+      position: absolute;
+      z-index: 3;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+    .hand{
+      position: absolute;
+      z-index: 7;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+    .mainbody{
+      position: absolute;
+      z-index: 0;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+    .mouth{
+      position: absolute;
+      z-index: 5;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+  
+  
+  </style>
+</html>
